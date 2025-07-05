@@ -1,0 +1,8 @@
+<h2>Dashboard</h2>
+<ul>
+    <li  *ngFor="let todo of todos">
+        <a routerLink="/info/{{todo.id}}">
+            {{ todo.todo_name }}
+        </a>
+    </li>
+</ul>
